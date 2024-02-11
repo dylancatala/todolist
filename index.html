@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ab3252168a.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header_title">
+          <img src="images/Logo.svg" alt="" />
+          <h1>My Task Board</h1>
+          <img src="images/Edit_duotone.svg" alt="" />
+        </div>
+      </header>
+
+      <section>
+        <div class="task_container">
+          <div class="task_notifications">
+            <p id="task_notifications_counter"></p>
+          </div>
+          <div class="favicon_task">
+            <div class="favicon_style">
+              <p class="favicon_ringbell">⏰</p>
+            </div>
+            <div>
+             <p class="task_manager_title">Task in Progress</p>
+            </div>
+          </div>
+          <div>
+          </div>
+          <div class="favicon_timer_task_progress">
+            <div class="duotone_img_container">
+              <img src="images/Time_atack_duotone.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="addTask">
+          <!-- add Tasks -->
+        </div>
+      </section>
+
+      <section>
+        <div class="completed_task_container">
+          <div class="favicon_task">
+            <div class="favicon_style">
+              <p class="favicon_ringbell">🏋️</p>
+            </div>
+            <div>
+             <p class="completed_task_title">Task Completed</p>
+            </div>
+          </div>
+          <div>
+          </div>
+          <div class="favicon_bg_completed">
+            <div class="duotone_img_container">
+              <img src="images/Done_round.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="addTaskCompleted">
+          <!-- add Tasks -->
+        </div>
+      </section>
+      
+
+      <section>
+        <form action="">
+          <div class="task_name_container">
+            <label for="task">Task Name</label>
+            <input type="text" id="taskNameInput" placeholder="Enter your task's name" />
+          </div>
+          <div class="description_container">
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter a short description"></textarea>
+          </div>
+        </form>
+        <div class="icons_cat_container">
+          <div class="title_icons">
+            <span>Icons</span>
+          </div>
+          <ul>
+            <li><button>👨‍💻</button></li>
+            <li><button>💬</button></li>
+            <li><button>☕</button></li>
+            <li><button>🏋️</button></li>
+            <li><button>📚</button></li>
+            <li><button>⏰</button></li>
+          </ul>
+        </div>
+        <div class="form_btn">
+          <button class="save_task_btn delete_btn">
+            <span>Delete</span>
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+          <button class="save_task_btn save_btn">
+            <span>Save</span>
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+      </section>
+      
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
